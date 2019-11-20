@@ -1,10 +1,12 @@
 (function (){
     "use strict";
     function recur(n){
-        if (n>1){
-            recur(n-1); 
+        //console.log(n);
+        if ( Math.round(n/10) < 1){
+            return n%10;
         }
-        return console.log(n);
+        
+        return (n%10 + recur(Math.round(n/10)) );
     }
-    recur(10);
+    console.log(recur(1234));
 })();
