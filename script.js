@@ -1,10 +1,16 @@
 (function (){
     "use strict";
-    function recur(n){
-        if (n>1){
-            recur(n-1); 
-        }
-        return console.log(n);
+    function recur(a, b){
+        if (a < b){
+            console.log(a);
+            recur(a + 1,b);
+        }else if(a > b){
+            console.log(a);
+            recur(a - 1 , b);
+        }else{
+            console.log(a);
+            return;
+        }      
     }
-    recur(10);
+    recur(2,5);
 })();
