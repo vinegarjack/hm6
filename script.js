@@ -1,9 +1,8 @@
 (function (){
     "use strict";
     function recur(n){
-        
-        if (Math.floor(n/10) === 0 && n%10 !==0){           
-            return console.log(n%10);            
+        if (Math.floor(n/10) === 0 && n%10 !==0){  
+            return console.log(n%10);                    
         }else {
             console.log(n%10);
     
